@@ -1,16 +1,17 @@
 #include <stdio.h>
 int main(){
-    int a, d, n;
+    int a, r, n;
     printf("Enter First term : ");
     scanf("%d", &a);
-    printf("Enter Common difference : ");
-    scanf("%d", &d);
+    printf("Enter Common ratio : ");
+    scanf("%d", &r);
     printf("Enter number of terms : ");
     scanf("%d", &n);
 
-    for(int i = a; i<= a+(n-1)*d; i = i+d){
-        printf("%d, ", i); 
+    for(int i=1; i<=n; i++){
+        printf("%d, ", a);
+        a = a * r;
     }
-    
+
     return 0;
 }
