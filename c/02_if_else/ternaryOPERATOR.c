@@ -14,7 +14,7 @@ int main()
     // }
 
     // ternary method
-    // exp1 exp2 : exp3
+    // exp1 ? exp2 : exp3
     (x % 2 == 0) ? printf("The number is Even") : printf("The number is odd");
 
     return 0;
